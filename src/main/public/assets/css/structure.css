@@ -4,7 +4,7 @@ Template URI: http://www.wpfreeware.com/colormag-free-wordpress-blogmagazine-the
 Author: WpFreeware
 Author URI: http://www.wpfreeware.com
 Description: A beautiful responsive magazine style template
-Version: 1.0 
+Version: 1.0
 License: GPL
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
@@ -53,6 +53,58 @@ h2{font-family:'Varela',sans-serif}
 #searchForm input[type="submit"]{background:url("img/btn_search.png") repeat scroll 0 0 rgba(0,0,0,0); border:0 none; float:right; font-size:0; height:35px; width:35px; -webkit-transition:all 0.5s; -o-transition:all 0.5s; transition:all 0.5s}
 #searchForm input[type="submit"]:hover{opacity:0.75}
 #contentbody{display:inline; float:left; padding:65px 0 22px; width:100%}
+/*.tablinks {
+     display: inline-block;
+     padding: 4px;
+     margin-bottom: 0;
+     font-size: 24;
+     line-height: 140%;
+     text-align: center;
+     text-decoration: none;
+     white-space: nowrap;
+     vertical-align: middle;
+     cursor: pointer;
+     border: 1px solid transparent;
+     border-radius: 4px;
+     color: white;
+     background-color: #2D8BCF;
+     background-size: 18px 18px;
+     min-width: 10px;
+     min-height: 10px;
+     background-position: center center;
+     position: absolute
+     background-repeat: no-repeat;
+     -webkit-user-select: none;
+        -moz-user-select: none;
+         -ms-user-select: none;
+          -o-user-select: none;
+             user-select: none;
+ }*/
+ .wrapper {
+     text-align: center;
+ }
+ div.tab button {
+    background-color: inherit;
+    float: left;
+    font-family: "varela";
+    font-weight: bold;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 15px;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+div.tab button.active {
+    background-color: #ccc;
+}
 .leftbar_content{float:left; display:inline; width:100%; min-height:200px}
 .leftbar_content > h2{background:none repeat scroll 0 0 white; border-bottom:1px solid #e3e3e3; border-top:1px solid #e3e3e3; font-size:16px; font-weight:bold; margin:0 0 25px; padding:5px 25px; line-height:32px}
 .single_stuff{float:left; display:inline; width:100%; padding:0 15px; margin-bottom:30px}
