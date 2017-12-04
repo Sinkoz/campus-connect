@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>ColorMag</title>
+<title>CampusConnect</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -61,21 +61,25 @@
 </header>
 <section id="contentbody">
   <div class="container">
-    <div class = "tab">
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#newEvents">New Events</a></li>
+    <li><a data-toggle="tab" href="#hotThreads">Hot Threads</a></li>
+  </ul>
+    <!-- <div class = "tab">
       <div class=" col-sm-12 col-md-6 col-lg-5">
         <button class="mainTabs" onclick="openTab(event, 'New Events')">New Events</button>
       </div>
       <div class="col-sm-6 col-md-2 col-lg-2">
         <button class="mainTabs" onclick="openTab(event, 'Hot Threads')">Hot Threads</button>
       </div>
-    </div>
+    </div> -->
   </div>
-  <div class="container">
-    <div class="row">
-      <div id="New Events" class="tabContent">
+  <!-- <div class="container">
+    <div class="row"> -->
+      <div id="newEvents" class="tab-pane fade in active">
         <div class= "col-sm-12 col-md-6 col-lg-6">
-          <div class="row">
-            <div class="leftbar_content">
+          <!-- <div class="row">
+            <div class="leftbar_content"> -->
               <h2>New Events</h2>
               <div class="single_stuff wow fadeInDown">
                 <div class="single_stuff_img"> <a href="pages/single.html"><img src="images/blockchain.jpg" alt=""></a> </div>
@@ -119,13 +123,15 @@
                   <li><a href="#">4</a></li>
                   <li><a href="#">5</a></li>
                 </ul>
-              </div>
-            </div>
+              <!-- </div>
+            </div> -->
           </div>
         </div>
       </div>
-      <div id="Hot Threads" class="tabContent">
-        <div class="col-sm-6 col-md-2 col-lg-2">
+
+
+      <div id="hotThreads" class="tab-pane fade">
+        <div class="col-sm-12 col-md-2 col-lg-2">
           <div class="row">
             <div class="middlebar_content">
               <h2 class="yellow_bg">What's Hot</h2>
@@ -193,8 +199,8 @@
           </div>
         </div>
       </div>
-    </div>
-  </div>
+    <!-- </div>
+  </div> -->
 </section>
 <footer id="footer">
   <div class="container">
