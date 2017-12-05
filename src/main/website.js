@@ -17,6 +17,11 @@ router.get("/",function(req,res){
   console.log('Showing Index')
 });
 
+router.get("/blockchain",function(req,res){
+  res.sendFile(path + "/public/pages/single.html");
+  console.log("Showing blockchain page")
+});
+
 // router.get("/about",function(req,res){
 //   res.sendFile(path + "about.html");
 // });

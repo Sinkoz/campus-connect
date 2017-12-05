@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html>
-
-
 <head>
 <title>CampusConnect</title>
 <meta charset="utf-8">
@@ -12,29 +10,55 @@
 <link rel="stylesheet" href="assets/css/font.css">
 <link rel="stylesheet" href="assets/css/animate.css">
 <link rel="stylesheet" href="assets/css/structure.css">
-
-<script src="assets/js/angular.min.js"></script>
-<script src="assets/js/angular-route.min.js"></script>
-<script src="assets/js/commons.module.js"></script>
-<!-- <script src="assets/js/main.config.js"></script> -->
 <!--[if lt IE 9]>
-
 <script src="assets/js/html5shiv.min.js"></script>
 <script src="assets/js/respond.min.js"></script>
 <![endif]-->
 </head>
-<body ng-app="campusconnect">
+<body>
 <div id="preloader">
   <div id="status">&nbsp;</div>
 </div>
 <a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
-<header id="header" ng-include src="'pages/navigation.html'">
+<header id="header">
+  <div class="container">
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+          <a class="navbar-brand" href="#index"><span>Campus</span>Connect</a> </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav custom_nav">
+            <li class=""><a href="#index">Home</a></li>
+            <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Topics</a>
+              <ul class="dropdown-menu" role="menu">
+                <li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" href="#">Topics Home</a> </li>
+                <li><a href="#">Current Affairs</a></li>
+                <li><a href="#">Economics</a></li>
+                <li><a href="#">Skiing</a></li>
+              </ul>
+            </li>
+            <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Active</a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Most Recently Posted</a></li>
+                <li><a href="#">New Posts</a></li>
+                <li><a href="#">Watchlist</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#"> </a></li>
+            <li><a href="#"> </a></li>
+            <li><a href="#"> </a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <form id="searchForm">
+      <input type="text" placeholder="Search...">
+      <input type="submit" value="">
+    </form>
+  </div>
 </header>
-
-
-
-
-
 <section id="contentbody">
   <div class="container">
   <ul class="nav nav-tabs">
@@ -60,7 +84,7 @@
               <div class="single_stuff wow fadeInDown">
                 <div class="single_stuff_img"> <a href="pages/single.html"><img src="images/blockchain.jpg" alt=""></a> </div>
                 <div class="single_stuff_article">
-                  <div class="single_sarticle_inner"> <a class="stuff_category" href="pages/single.html">Technology</a>
+                  <div class="single_sarticle_inner"> <a class="stuff_category" href="#">Technology</a>
                     <div class="stuff_article_inner"> <span class="stuff_date">Oct <strong>20</strong></span>
                       <h2><a href="pages/single.html">Blockchain Collider</a></h2>
                       <p>Learn about the emerging opportunities at the intersection of finance, security, and cryptography. Blockchain is the underlying technology behind bitcoin. The technology contains the potential to change finance and banking as we know it. Marc Andreess...</p>
@@ -141,7 +165,7 @@
               <h2>The Featured Stuff</h2>
               <ul class="featured_nav">
                 <li> <a class="featured_img" href="#"><img src="images/animal_rights.jpg" alt=""></a>
-                  <div class="featured_title"> <a class="" href="pages/single.html">Fight for Animal Rights at Sproul</a> </div>
+                  <div class="featured_title"> <a class="" href="#">Fight for Animal Rights at Sproul</a> </div>
                 </li>
                 <li> <a class="featured_img" href="#"><img src="images/ragamala_dance.jpg" alt=""></a>
                   <div class="featured_title"> <a class="" href="#">Ragamala Dance Company Presents: Written in Water</a> </div>
