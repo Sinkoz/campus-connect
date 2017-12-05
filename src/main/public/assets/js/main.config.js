@@ -7,7 +7,12 @@
          .config(configure);
 
      function configure($routeProvider) {
-         // route something
+                 $routeProvider
+                     .when('/',{
+//                         templateUrl: "commons/questions-main",
+//                         controller: "clefQuestionsMainController",
+//                         controllerAs: "$ctrl"
+                     })
      };
 
  })();
