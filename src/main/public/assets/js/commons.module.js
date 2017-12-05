@@ -3,6 +3,9 @@
 
     // set commons module with dependency injection
     angular
-        .module('campusconnect', []);
+        .module('campusconnect', [
+                    'ngRoute',
+                    'ngAnimate'
+        ]);
 
 })();
