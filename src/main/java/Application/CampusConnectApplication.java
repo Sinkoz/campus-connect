@@ -1,4 +1,4 @@
-package com.in28minutes.springboot.studentservices;
+package Application;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

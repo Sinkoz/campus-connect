@@ -18,6 +18,11 @@ import javax.persistence.Id;
 @Setter
 @NoArgsConstructor
 @ToString
-public class Posts {
+public class User {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private long id;
 
+    private String firstName;
+    private String lastName;
 }

@@ -18,11 +18,11 @@ import javax.persistence.Id;
 @Setter
 @NoArgsConstructor
 @ToString
-public class Users {
+public class Post {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
 
-    private String firstName;
-    private String lastName;
+    private Topic topic;
+    private String message;
 }
