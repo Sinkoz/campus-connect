@@ -9,10 +9,15 @@
      function configure($routeProvider) {
                  $routeProvider
                      .when('/',{
-//                         templateUrl: "commons/questions-main",
-//                         controller: "clefQuestionsMainController",
-//                         controllerAs: "$ctrl"
+                        templateUrl: "views/index.html",
+                        controller: "navigationController",
+                        controllerAs: "$ctrl"
                      })
+                     .when("/blockchain", {
+                      templateUrl : "view/pages/blockchain.html"
+                      controller: "navigationController",
+                      controllerAs: "$ctrl"
+    })
      };
 
  })();
