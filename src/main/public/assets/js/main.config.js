@@ -9,15 +9,8 @@
      function configure($routeProvider) {
                  $routeProvider
                      .when('/',{
-                        templateUrl: "views/index.html",
-                        controller: "navigationController",
-                        controllerAs: "$ctrl"
+                        templateUrl: "templates/partials/newEventsTabs.html"
                      })
-                     .when("/blockchain", {
-                      templateUrl : "view/pages/blockchain.html"
-                      controller: "navigationController",
-                      controllerAs: "$ctrl"
-    })
      };
 
  })();

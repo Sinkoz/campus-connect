@@ -13,12 +13,12 @@ router.use(function (req,res,next) {
 });
 
 router.get("/",function(req,res){
-  res.sendFile(__dirname + "/views/index.html");
+  res.sendFile(__dirname + "/public/templates/index.html");
   console.log('Showing Index')
 });
 
 router.get("/blockchain",function(req,res){
-  res.sendFile(path + "/public/pages/single.html");
+  res.sendFile(path + "/resources/static/pages/single.html");
   console.log("Showing blockchain page")
 });
 
