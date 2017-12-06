@@ -9,7 +9,8 @@
      function configure($routeProvider) {
                  $routeProvider
                      .when('/',{
-                        templateUrl: "templates/partials/newEventsTabs.html"
+                        templateUrl: "templates/partials/newEventsTabs.html",
+                        controller: "eventTabController"
                      })
      };
 
