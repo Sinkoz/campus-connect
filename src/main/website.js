@@ -29,7 +29,7 @@ router.get("/economics",function(req,res){
 
 router.get("/netNeutrality",function(req,res){
   res.sendFile(__dirname + "/public/templates/pages/forumThread.html");
-  console.log('Showing forum page (economics)')
+  console.log('Showing forum page (netNeutrality)')
 });
 
 
